@@ -5,7 +5,6 @@
     "keywords": ["laravel", "csv", "export"],
     "type": "library",
     "require": {
-        "illuminate/database": "5.5.x-dev"
     },
     "authors": [
         {
