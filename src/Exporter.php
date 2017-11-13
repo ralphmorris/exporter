@@ -27,7 +27,7 @@ class Exporter
 		    fputcsv($f, $thread->toArray());
 		}
 
-		rewind($f);
+		rewind($f)
 
 		return Response::make(stream_get_contents($f), 200, $this->headers($fileName));
 	}
