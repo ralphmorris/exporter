@@ -2,6 +2,12 @@
 
 Exporter is a package for Laravel that provides a simple csv export of any collection of models.
 
+## Installation
+
+```
+composer require ralphmorris/exporter
+```
+
 ## Usage
 
 In your controller use:
@@ -19,12 +25,12 @@ public function export()
 
     $exporter = new Exporter;
 
-    return $exporter->exportToCsv($users');
+    return $exporter->exportToCsv($users);
 }
 ```
 
 You can also optionally specify the filename by providing a second parameter.
 
 ```php
-return $exporter->exportToCsv($users', 'my-file-name.csv');
+return $exporter->exportToCsv($users, 'my-file-name.csv');
 ```
