@@ -51,7 +51,7 @@ use RalphMorris\Exporter\ExportableColumnsTrait;
 
 class User extends Model
 {
-	use ExportableColumnsTrait;
+    use ExportableColumnsTrait;
 
 	/**
 	 * The columns that are exportable to CSV
