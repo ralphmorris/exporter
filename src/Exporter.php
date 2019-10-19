@@ -16,7 +16,7 @@ class Exporter
 	 */
 	public function exportToCsv($collection, $fileName = null)
 	{
-		$f = fopen('php://memory', 'w+');
+		$f = fopen('php://temp', 'w+');
 		
 		$header = array_keys($collection->first()->toArray());
 
